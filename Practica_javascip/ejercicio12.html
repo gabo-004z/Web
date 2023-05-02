@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ejercicio 12</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav>
+  <ul>
+  <li><a href="ejercicio11.html" class="back">&lArr; ejercicio 11</a></li>
+  <li><a href="ejercicio13.html" class="forward">ejercicio 13 &rArr;</a></li>
+  </ul>
+  </nav>
+<p>Aprieta el botón para desplegar la fecha</p>
+<button
+onclick="document.getElementById('resultado').innerHTML=muestraFecha()">La fecha es?</button>
+<script>
+function muestraFecha() {
+return Date();
+}
+</script>
+<p id="resultado"></p>
+</body>
+</html>

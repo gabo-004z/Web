@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ejercicio 6</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav>
+  <ul>
+  <li><a href="ejercicio5.html" class="back">&lArr; ejercicio 5</a></li>
+  <li><a href="ejercicio7.html" class="forward">ejercicio 7 &rArr;</a></li>
+  </ul>
+  </nav>
+<p>Los siguientes son los datos
+del alumno.</p>
+<p id="nombre"></p>
+<p id="matricula"></p>
+<p id="carrera"></p>
+<script>
+var alumno = {nombre:"Goku",
+matricula:"4578",
+carrera:"sayayin"};
+document.getElementById("nombre").innerHTML = alumno.nombre; //completar
+document.getElementById("matricula").innerHTML = alumno.matricula;// completar
+document.getElementById("carrera").innerHTML = alumno.carrera; //completar
+</script>
+</body>
+</html>

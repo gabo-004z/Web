@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title>Varios estilos CSS</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+  <style>
+    /* I wish this were the default */
+    body {
+      font-family: arial, sans-serif;
+    }
+    #first {
+      font-family: monospace;
+    }
+    #second {
+      color: green;
+    }
+    .morespace {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .shout {
+      text-transform: uppercase;
+    }
+    .loud {
+      color: red;
+    }
+    /* Paragraph tags within a tag with id */
+    #third p {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <ul>
+  <li><a href="newtags.htm" class="back">&lArr; Etiquetas para CSS</a></li>
+  <li><a href="navbar.htm" class="forward">Ejemplo de barra de navegacion &rArr;</a></li>
+  </ul>
+  </nav>
+<h1>Selección y estilo de etiquetas</h1>
+<div id="first">
+<p>
+Para evitar poner demasiado en el atributo de
+<strong>estilo</strong>,
+podemos usar los atributos de <strong>clase</strong> y
+<strong>id</strong> para diseñar un subconjunto de las etiquetas.
+</p>
+<p class="morespace">
+una etiqueta de <strong>identificacion</strong> debe ser única en todo el documento,
+mientras que la etiqueta de
+<strong>clase</strong> se puede usar en muchas etiquetas en todo el documento.
+</div>
+<div id="second">
+<p>
+Podemos usar la <strong>clase</strong> a lo
+<span class="shout">largo </span> de <span class="shout">todo</span>
+el documento.
+</p>
+<p class="morespace">
+Es <strong class="shout">muy bueno</strong>
+usar clases. Se puede utilizar en cualquier etiqueta.
+</p>
+<p class="shout loud">
+¡una etiqueta puede tener mas de una clase!
+</p>
+</div>
+<div id="third">
+<p>
+Incluso puede usar una cadena de selección jerárquica para diseñar etiquetas.
+</p>
+<p>
+En general, es bueno mantener su HTML lo más limpio
+ y fácil de entender posible como en este simple ejemplo de
+<a href="navbar.htm">
+&rArr; barra de navegacion.
+</a>
+</p>
+</div>
+<!-- Ignore this for now :) -->
+<p style="border-style: none; position:fixed; bottom: 10px; right: 10px;">
+Vuelva a la
+<a href="index.htm">pagina de inicio</a>.
+</p>
+</body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ejercicio 13</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+</head>
+<head>
+<meta charset="ISO-8859-1">
+<title>Conversión de grados
+Celsius a grados
+Fahrenheit</title>
+</head>
+<body>
+  <nav>
+  <ul>
+  <li><a href="ejercicio12.html" class="back">&lArr; ejercicio 12</a></li>
+  <li><a href="ejercicio14.html" class="forward">ejercicio 14 &rArr;</a></li>
+  </ul>
+  </nav>
+<h1>Conversion de grados Celsius a grados Fahrenheit</h1>
+<form action="#" method="post">
+<label
+for="gradoCelsius">Grado Celsius:</
+label>
+<input type="text"
+name="gradoCelsius"
+id="gradoCelsius">
+<input type="button"
+name="enviar" id="enviar"
+value="calcular"
+onclick="convertir()" />
+</form>
+<script type="text/javascript">
+function convertir(){
+var celsius = document.getElementById("gradoCelsius").value;
+var fahrenheit=((celsius*9)/5)+32;
+alert(fahrenheit+" F");
+}
+</script>
+</body>
+</html>

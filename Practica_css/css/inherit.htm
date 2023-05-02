@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>"C" significa "cascada" </title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+  <style>
+    body {
+      font-family: arial, sans-serif;
+    }
+    p {
+      border-style: dotted;
+      border-color: red !important;
+      border-width: 5px;
+      background-color: #EAECEE;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
+  <style>
+    p {
+      border-style: solid;
+      border-color: green;
+    }
+  </style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="images.htm" class="back">&lArr; CSS and Images</a></li>
+<li><a href="box.htm" class="forward">Cajas CSS &rArr;</a></li>
+</ul>
+</nav>
+<h1>"C" significa "cascada" </h1>
+<p>
+Order matters. The CSS rule that is "closest" to the tag wins unless a "further away"
+ tag (i.e. border-color) marks itself as <b>!importante</b>.
+</p>
+<p style="border-style: dashed; border-color: blue;">
+Incluso el uso del atributo de <strong>estilo</strong>
+justo en la etiqueta se desvanece frente a la etiqueta <strong>!importante.</strong>
+</p>
+<p style="border-style: dashed; border-color: blue !important;">
+Pero siempre puede tomar el control local usando
+<strong>!importante</strong> "más cerca" de la etiqueta.
+</p>
+<p>
+Use <strong>!importante</strong> con moderacion.
+Tendemos a usarlo cuando tenemos una hoja de estilo proporcionada por alguien que estamos usando y no podemos cambiar. A veces se está compensando un problema de marcado y se apuesta a solucionar las cosas sin recurrir a
+ <strong>!importante</strong>  si cabe.
+</p>
+</body>

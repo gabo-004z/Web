@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ejercicio 7</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav>
+  <ul>
+  <li><a href="ejercicio6.html" class="back">&lArr; ejercicio 6</a></li>
+  <li><a href="ejercicio8.html" class="forward">ejercicio 8 &rArr;</a></li>
+  </ul>
+  </nav>
+<p>Los siguientes son los datos
+del alumno.</p>
+<p id="nombre"></p>
+<p id="matricula"></p>
+<p id="carrera"></p>
+<script>
+var alumno = {
+nombre:"Goku",
+matricula:"4578",
+carrera:"sayayin",
+getNombre: function() {
+return this.nombre;
+},
+getMatricula: function() {
+return this.matricula;
+},
+getCarrera: function() {
+return this.carrera;
+},
+};
+// Display data from the object:
+document.getElementById("nombre").innerHTML = alumno.getNombre();
+document.getElementById("matricula").innerHTML =alumno.getMatricula();
+document.getElementById("carrera").innerHTML = alumno.getCarrera();
+</script>
+</body>
+</html>

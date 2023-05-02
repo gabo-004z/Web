@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ejercicio 3</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav>
+  <ul>
+  <li><a href="ejercicio2.html" class="back">&lArr; ejercicio 2</a></li>
+  <li><a href="ejercicio4.html" class="forward">ejercicio 4 &rArr;</a></li>
+  </ul>
+  </nav>
+<h1>Operador ==</h1>
+<p id="resultado1"></p>
+<h1>Operador ===</h1>
+<p id="resultado2"></p>
+<script>
+let x, y,z,xy; // Statement 1
+x = 5; // Statement 2
+y = "5"; // Statement 3
+z = (x==y)
+xy = (x===y)
+document.getElementById("resultado1").innerHTML = z;
+document.getElementById("resultado2").innerHTML = xy;
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ejercicio 9</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav>
+  <ul>
+  <li><a href="ejercicio8.html" class="back">&lArr; ejercicio 8</a></li>
+  <li><a href="ejercicio10.html" class="forward">ejercicio 10 &rArr;</a></li>
+  </ul>
+  </nav>
+<p>Los siguientes son los datos
+del alumno.</p>
+<p id="alm"></p>
+<p id="nombre"></p>
+<p id="matricula"></p>
+<p id="carrera"></p>
+<script>
+function Alumno(nombre, matricula,carrera) {
+this.nombre = nombre,
+this.matricula = matricula,
+this.carrera = carrera
+this.getNombre = function()
+{return this.nombre;}
+this.getMatricula = function()
+{return this.matricula;}
+this.getCarrera = function()
+{return this.carrera;}
+}
+// crear al alumno 1
+// crear al alumno 2
+// crear el arreglo de alumnos
+const alumno1 = ["juan", "12345","computacion"];
+const alumno2 = ["maria", "5555","electronica"];
+const alumnos = [];
+alumnos.push(alumno1)
+alumnos.push(alumno2)
+// crear al alumno 2
+// crear el arreglo de alumnos
+document.getElementById("alm").innerHTML = alumnos[0];
+document.getElementById("nombre").innerHTML = alumnos[0][0];
+document.getElementById("matricula").innerHTML = alumnos[0][1];
+document.getElementById("carrera").innerHTML = alumnos[0][2];
+</script>
+</body>
+</html>

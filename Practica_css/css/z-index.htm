@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>La Tercera Dimensión (x,y,z)</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+  <style>
+    div {
+     width:10em;
+     border: 5px red solid;
+     padding: 5px;
+     margin: 5px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="position.htm" class="back">&lArr; Bloques de posicionamiento </a></li>
+<li><a href="navdetail.htm" class="forward">Formato de la barra de navegacion &rArr;</a></li>
+</ul>
+</nav>
+<h1>La Tercera Dimensión (x,y,z)</h1>
+<div style="z-index:100; background-color: pink; position:absolute; top: 10px; right: 50%;">
+(1) Un bloque puede obligarse a mostrarse sobre otro material si tiene un <b>indice z</b> mas grande.
+</div>
+<div style="z-index: -100; background-color: orange; min-height: 120px; position:absolute; top: 20px; left: 0;">
+(2) No veremos todo esto porque estará detrás del resto del texto con un <strong> indice z</strong> de -100. Este fue el texto (2) por cierto.
+</div>
+<div style="background-color: yellow; position:absolute; top: 100px; right: 60%;">
+(3) Cuando hay un color de fondo (es decir, no transparente), los bloques superpuestos importan.
+</div>
+<div style="position: absolute; right: 10px;">
+(4) Como muchas cosas en CSS, es importante administrar cuidadosamente su uso de <strong>z-index</strong>
+especialmente cuando está usando múltiples archivos CSS de múltiples fuentes y cuando está usando JavaScript o algo como JQuery para modificar su marcado.
+</div>
+
+<!-- We finally know how this sticky piece of navigation works! -->
+<p style="border-style: none; position:fixed; bottom: 10px; right: 10px;">
+Vuelva a la
+<a href="index.htm">Pagina de inicio</a>.
+</p>
+</body>

@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Bloques de tamaño</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+  <style>
+    body {font-family: monospace;}
+    div { /* Defaults */
+     width:20em;
+     border: 5px red solid;
+     padding: 5px;
+     margin: 5px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="box.htm" class="back">&lArr; Cajas CSS</a></li>
+<li><a href="position.htm" class="forward">Bloques de posicionamiento &rArr;</a></li>
+</ul>
+</nav>
+<h1>Bloques de tamaño</h1>
+<div>
+El ancho sin altura es genial: el texto se ajusta automáticamente y la altura se expande según sea necesario.
+</div>
+<div style="height: 5em;">
+Una vez que especifica la altura, está anulando la forma natural en que el navegador establece la altura después del ajuste de texto.
+</div>
+<div style="height: 70px;">
+Si usa píxeles para establecer la altura, su bloque puede o no cambiar de tamaño a medida que usa el zoom para hacer que el texto sea más grande o más pequeño.
+</div>
+<div style="height: 3em; overflow: scroll">
+Puede indicarle al navegador que agregue una pequeña barra de desplazamiento si el texto no cabe en la altura que configuró.
+</div>
+<div style="height: 3em; overflow: scroll">
+Sin desplazamiento si el texto cabe.
+</div>
+<div style="height: 3em; overflow: hidden">
+O puede decir, simplemente oculte cualquier texto que fluya más allá de la altura. ¿A dónde se fue todo?
+</div>
+<div>
+Para un rompecabezas, descubra por qué el cuerpo del texto es<strong>monospace</strong>
+mientras que la barra de navegación sigue siendo <strong>sans-serif</strong>.
+</div>
+
+<!-- Ignore this for now :) -->
+<p style="border-style: none; position:fixed; bottom: 10px; right: 10px;">
+Vuelva a la
+<a href="index.htm">pagina de inicio</a>.
+</p>
+</body>

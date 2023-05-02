@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ejercicio 14</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav>
+  <ul>
+  <li><a href="ejercicio13.html" class="back">&lArr; ejercicio 13</a></li>
+  <li><a href="ejercicio1.html" class="forward">ejercicio 1 &rArr;</a></li>
+  </ul>
+  </nav>
+<p>The sort() method :</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+const Martricula = [234, 345, 456,
+456,235,567,345,987,846,465];
+document.getElementById("demo1").innerHTML = Martricula;
+Martricula.sort();
+document.getElementById("demo2").innerHTML = Martricula;
+</script>
+</body>
+</html>

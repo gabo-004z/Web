@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>Bloques de posicionamiento </title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+  <style>
+    div {
+     width:10em;
+     border: 5px red solid;
+     padding: 5px;
+     margin: 5px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="sizing.htm" class="back">&lArr; Bloques de tamaño</a></li>
+<li><a href="z-index.htm" class="forward">La Tercera Dimensión (x,y,z) &rArr;</a></li>
+</ul>
+</nav>
+<h1>Posicionamiento</h1>
+<div>
+(1) De forma predeterminada, los bloques de texto se siguen unos a otros.
+</div>
+<div>
+(2) Uno tras otro.
+</div>
+<div style="position: relative; left: -20px; top: 20px;">
+(3) Una posición relativa se aleja un bloque de donde normalmente se colocaría.
+</div>
+<div>
+(4) Y el texto después de eso simplemente se establece. Así que ten algo de cuidado con los parientes.
+</div>
+<div style="border-color: green; position: fixed; bottom: 20px; left: 30%;">
+(5) El texto fijo es relativo a la <em>ventana</em>.
+Mantiene su posición incluso cuando se cambia el tamaño de la ventana o se desplaza.
+Un <a href="index.htm">vinculo</a> que nunca desaparece.
+</div>
+<div style="border-color: orange; position: absolute; top: 40px; left: 30%;">
+(6) El texto absoluto es relativo a su elemento padre. En este caso, el<strong>div</strong>
+se coloca en relación con la etiqueta <strong>body</strong>.
+Mantiene su posición incluso cuando se cambia el tamaño de la ventana o se desplaza.
+</div>
+<div>
+(7) En cierto sentido, los elementos <strong>fijos</strong> y
+<strong>absolutos</strong> se "arrancan" del flujo de renderizado normal y, como tales, no ocupan espacio vertical. estas etiquetas no dejan ningún relleno ni margen.
+</div>
+<div style="border-color: yellow; position: relative; left: -1000px;">
+(8) Where did this text go?
+</div>
+<div style="border-color: yellow;">
+(9) ¿Por qué no puedo ver (8) pero ocupaba espacio?
+</div>
+
+<!-- We finally know how this sticky piece of navigation works! -->
+<p style="border-style: none; position:fixed; bottom: 10px; right: 10px;">
+Vuelva a la
+<a href="index.htm">pagina de inicio</a>.
+</p>
+</body>

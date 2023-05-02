@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ejercicio 10</title>
+  <link type="text/css" rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav>
+  <ul>
+  <li><a href="ejercicio9.html" class="back">&lArr; ejercicio 9</a></li>
+  <li><a href="ejercicio11.html" class="forward">ejercicio 11 &rArr;</a></li>
+  </ul>
+  </nav>
+<p>Sumando dos números con una
+función</p>
+<p id="resultado"></p>
+<p id="resultado2"></p>
+<script>
+// La funcion debe ir aqui
+function Suma(p1, p2, p3, p4) {
+return p1 + p2 + p3 + p4;
+}
+function Suma1(p1, p2, p3, p4, p5,
+p6, p7) {
+return p1 + p2 + p3 + p4 + p5 +
+p6 + p7;
+}
+document.getElementById("resultado").innerHTML =Suma(4,3,7,4);
+document.getElementById("resultado2").innerHTML =
+Suma1(7,4,3,2,8,9,10);
+</script>
+</body>
+</html>
